@@ -6,7 +6,7 @@ const fs = require('fs');
 //const font2base64 = require('node-font2base64')
 const bodyParser = require("body-parser")
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 // ***** LOLLAPALOOZA POSTER ***** //
 
