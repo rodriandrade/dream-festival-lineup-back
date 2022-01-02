@@ -737,7 +737,7 @@ app.post('/generate', (req, res) => {
         output: './image12.png',
         html: poster, 
         puppeteerArgs: {
-            args: ['--no-sandbox', '--headless'], ignoreHTTPSErrors: true
+            args: ["--no-sandbox", "--disable-setuid-sandbox"]
         },
         quality: 100
     })
