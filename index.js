@@ -734,7 +734,7 @@ app.post('/generate', (req, res) => {
     }
         
     nodeHtmlToImage({
-        output: './image.png',
+        output: './public/images/image.png',
         html: poster, 
         puppeteerArgs: {
             args: ["--no-sandbox", "--disable-setuid-sandbox"]
@@ -743,7 +743,7 @@ app.post('/generate', (req, res) => {
     })
     .then(() => {
         console.log('The image was created successfully!')
-        const imagePoster = fs.readFileSync('./image12.png');
+        const imagePoster = fs.readFileSync('./public/images/image.png');
         const base64ImagePoster = new Buffer.from(imagePoster).toString('base64');
         const file = 'data:image/jpeg;base64,' + base64ImagePoster
 
