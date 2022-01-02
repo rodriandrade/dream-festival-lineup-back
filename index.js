@@ -49,7 +49,7 @@ const base64ImageFantasy01Circle = new Buffer.from(imageFantasy01Circle).toStrin
 const dataURIFantasy01Circle = 'data:image/jpeg;base64,' + base64ImageFantasy01Circle
 
 var corsOptions = {
-	origin: "https://dream-festival-lineup-front.vercel.app/",
+	origin: "https://dream-festival-lineup-front.vercel.app",
 };
 
 app.use(cors(corsOptions));
