@@ -11,40 +11,40 @@ app.use(express.static(path.resolve('./public')));
 
 // ***** LOLLAPALOOZA POSTER ***** //
 
-const imageCloud2 = fs.readFileSync('public/images/cloud2.png');
+const imageCloud2 = fs.readFileSync('./public/images/cloud2.png');
 const base64ImageCloud2 = new Buffer.from(imageCloud2).toString('base64');
 const dataURICloud2 = 'data:image/jpeg;base64,' + base64ImageCloud2
 
-const imageCloud3 = fs.readFileSync('public/images/cloud3.png');
+const imageCloud3 = fs.readFileSync('./public/images/cloud3.png');
 const base64ImageCloud3 = new Buffer.from(imageCloud3).toString('base64');
 const dataURICloud3 = 'data:image/jpeg;base64,' + base64ImageCloud3
 
-const imageKite = fs.readFileSync('public/images/kite.png');
+const imageKite = fs.readFileSync('./public/images/kite.png');
 const base64ImageKite = new Buffer.from(imageKite).toString('base64');
 const dataURIKite = 'data:image/jpeg;base64,' + base64ImageKite
 
-const imageKite2 = fs.readFileSync('public/images/kite2.png');
+const imageKite2 = fs.readFileSync('./public/images/kite2.png');
 const base64ImageKite2 = new Buffer.from(imageKite2).toString('base64');
 const dataURIKite2 = 'data:image/jpeg;base64,' + base64ImageKite2
 
-const imageKite3 = fs.readFileSync('public/images/kite3.png');
+const imageKite3 = fs.readFileSync('./public/images/kite3.png');
 const base64ImageKite3 = new Buffer.from(imageKite3).toString('base64');
 const dataURIKite3 = 'data:image/jpeg;base64,' + base64ImageKite3
 
-const imageKite4 = fs.readFileSync('public/images/kite4.png');
+const imageKite4 = fs.readFileSync('./public/images/kite4.png');
 const base64ImageKite4 = new Buffer.from(imageKite4).toString('base64');
 const dataURIKite4 = 'data:image/jpeg;base64,' + base64ImageKite4
 
-const imageLollapalooza = fs.readFileSync('public/images/lollapalooza.png');
+const imageLollapalooza = fs.readFileSync('./public/images/lollapalooza.png');
 const base64ImageLollapalooza = new Buffer.from(imageLollapalooza).toString('base64');
 const dataURILollapalooza = 'data:image/jpeg;base64,' + base64ImageLollapalooza
 // ***** LOLLAPALOOZA POSTER ***** // 
 
-const imageFantasy01 = fs.readFileSync('public/images/fantasy_background.png');
+const imageFantasy01 = fs.readFileSync('./public/images/fantasy_background.png');
 const base64ImageFantasy01 = new Buffer.from(imageFantasy01).toString('base64');
 const dataURIFantasy01 = 'data:image/jpeg;base64,' + base64ImageFantasy01
 
-const imageFantasy01Circle = fs.readFileSync('public/images/main_circle.png');
+const imageFantasy01Circle = fs.readFileSync('./public/images/main_circle.png');
 const base64ImageFantasy01Circle = new Buffer.from(imageFantasy01Circle).toString('base64');
 const dataURIFantasy01Circle = 'data:image/jpeg;base64,' + base64ImageFantasy01Circle
 
