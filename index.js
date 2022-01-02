@@ -735,7 +735,10 @@ app.post('/generate', (req, res) => {
         
     nodeHtmlToImage({
         output: './image12.png',
-        html: poster,
+        html: poster, 
+        puppeteerArgs: {
+            args: ['--no-sandbox', '--headless'], ignoreHTTPSErrors: true
+        },
         quality: 100
     })
     .then(() => {
