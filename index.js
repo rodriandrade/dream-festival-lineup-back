@@ -734,7 +734,7 @@ app.post('/generate', (req, res) => {
     }
         
     nodeHtmlToImage({
-        output: './image12.png',
+        output: './image.png',
         html: poster, 
         puppeteerArgs: {
             args: ["--no-sandbox", "--disable-setuid-sandbox"]
